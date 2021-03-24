@@ -1,0 +1,21 @@
+<h1>spacecrafts our transport to reach beyond the skiline</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col bg-dark" *ngFor="let craft of crafts">
+      <div class="card ">
+        <img [src]="craft.img" class="card-img-top" [alt]="craft.name">
+        <div class="card-body">
+          <h5 class="card-title text-center text-white bg-dark">{{ craft.name }} </h5>
+          <p class="card-text">{{ craft.description }}</p>
+          <hr>
+          <p class="card-text">{{ craft.date}}</p>
+        </div>
+
+        <button class="btn btn-primary" type="button">
+            more
+        </button>
+      </div>
+    </div>
+
+  </div>
